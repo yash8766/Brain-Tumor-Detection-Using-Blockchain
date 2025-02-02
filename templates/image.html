@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Brain Tumor Detection</title>
+ 
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <style>
+
+    .maina{
+      margin-top: 130px;;
+    }
+
+    .detectcard{
+      width: 600px;
+      height: 400px;
+      border-style: 2px solid;
+      box-shadow: 5px 5px 5px  lightsteelblue;
+    }
+
+    .fontf{
+      color: #1565b1;
+      margin-left: 30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .itext{
+      height: 30px;
+      width: 250px;
+      padding: 12px 12px;
+      box-sizing: border-box;
+      border: 1px solid lightsteelblue;
+      outline: none;
+    }
+
+    .itext:hover{
+      border: 2px solid #1565b1;
+    }
+
+    .testbtn{
+      width: 100px;
+      height: 45px;
+      margin-left: 180px;
+    }
+
+    .tcard{
+      margin-top: 5px;
+      box-shadow: 5px 5px 5px lightsteelblue;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="#">algorithmic.electronics@gmail.com</a>
+        <i class="bi bi-phone"></i> +91 9049301122
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">DetectBrainTumor.com</a></h1>
+     
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="home">Home</a></li>
+          <li><a class="nav-link scrollto active" href="image">Detect Brain Tumor</a></li>
+          <li><a class="nav-link scrollto" href="mine">Latest Report</a></li>
+          <li><a class="nav-link scrollto" href="full_chain">Show Full Block Chain</a></li>
+          <li><a class="nav-link scrollto" href="#">About</a></li>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header --> 
+
+  <div class="container maina">
+    <br>
+    <header style="text-align: center; color: #1565b1;"> 
+      <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Upload CT/MRI Scan</h3> <br>
+    </header>
+
+    <div class="row">
+      <div class="col-lg-6">
+         <img src="static/images/bimg.jpg" alt="Alps" style="width:100%; height: 400px;">
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card detectcard">
+          <div class="card-body">
+
+            <form action="" method="post" enctype="multipart/form-data">
+               
+              <input style="margin-left: 30px; margin-top: 5px;" type="file" name="photo" accept="image/*"/>
+              <input name="sub" type="submit" value="Upload"><br><br>
+      
+              <label class="fontf"><strong>Patient Name:</strong></label>
+
+              <input class="itext" style="margin-left: 35px;" type="text" name='name' value="{{ name }}"><br><br>
+        
+              <label class="fontf"><strong>Contact Number:</strong></label>
+
+              <input class="itext" style="margin-left: 12px;" type="text" name='num' value="{{ num }}"><br><br>
+      
+              <input class="btn btn-primary btn-lg testbtn" name="sub" type="submit" value="Test">
+            </form>
+
+            <div>
+              <br>
+              <div class="card tcard">
+                <h4 class="card-header" style="background-color: white; color: #1565b1; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Test Report</h4>
+                <div class="card-body">
+                  <h4 style="text-align: center;">{{ result }}</h4>
+                </div>
+              </div>
+            
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>  <br><br>
+
+<footer id="footer1" >
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div style="margin-top: 30px;" class="me-md-auto text-center text-md-start">
+
+            <div class="copyright">
+              &copy; Copyright <strong><span>DetectBrainTumor.com</span></strong>. All Rights Reserved
+            </div>
+            
+            <div class="credits">
+              Designed by <a href="#">DetectBrainTumor.com</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="social-links text-center text-md-right pt-3 pt-md-0" style="margin-top: 30px; margin-left: 320px;" >
+
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

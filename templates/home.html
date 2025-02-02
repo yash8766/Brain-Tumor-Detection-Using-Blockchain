@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Brain Tumor Detection</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  
+
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <style>
+
+    .bicard{
+      box-shadow: 5px 5px 5px  lightsteelblue;
+    }
+
+    .biheader{
+      text-align: center;
+      color: #1565b1;
+      background-color: white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .bitext{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+    }
+
+    .bcard1, .bcard2, .bcard3{  
+      box-shadow: 5px 5px 5px  lightsteelblue;
+    }
+
+    .bhcard1, .bhcard2, .bhcard3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: #1565b1;
+        background-color: white;
+    }
+
+    #bcard1-btn, #bcard2-btn, #bcard3-btn{
+      width: 110px;
+      margin-left: 25px;
+      color: #1565b1;
+    }
+
+    #bcard1-hide, #bcard2-hide, #bcard3-hide{
+      display: none;
+    }
+
+    .img{
+      width: 300px;
+      height: 200px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="#">algorithmic.electronics@gmail.com</a>
+        <i class="bi bi-phone"></i> +91 9049301122
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto" style="color: #1565b1;"><a href="#">DetectBrainTumor.com</a></h1>
+     
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="home">Home</a></li>
+          <li><a class="nav-link scrollto" href="image">Detect Brain Tumor</a></li>
+          <li><a class="nav-link scrollto" href="mine">Latest Report</a></li>
+          <li><a class="nav-link scrollto" href="full_chain">Show Full Block Chain</a></li>
+          <li><a class="nav-link scrollto" href="#">About</a></li>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <br>
+      <h3 style="color: #1565b1;"> Brain Tumor Detection using Machine Learning and Block Chain. </h3>
+      <a href="image" class="btn-get-started scrollto">Detect Brain Tumor</a>
+    </div>  
+</section><!-- End Hero -->
+
+<br><br><br><br><br>
+
+<div class="bcards">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="card bcard1">
+
+                     <h4 class="card-header bhcard1"> <strong> Signs & Symptoms. </strong> </h4>
+                     
+                     <span style="margin-left: 15px; margin-top: 15px; font-size: 15px;">The signs and symptoms of a brain tumor vary greatly and depend on the brain tumor's size, 
+                     location and rate of growth.</span><br>
+                     
+                     <span style="margin-left: 15px; font-size: 15px;">General signs and symptoms caused by brain tumors may include:</span>
+                     
+                     <ul style="margin-left: 15px; font-size: 15px;"><br>
+                        <li> New onset or change in pattern of headaches. </li> <br>
+                        <li> Headaches that gradually become more frequent and more severe. </li>
+                      </ul>
+
+                      <div id="bcard1-hide">
+
+                        <ul style="margin-left: 15px; font-size: 15px;">
+                          <li> Difficulty with balance, Speech difficulties. </li> <br>
+                          <li> Vision problems, such as blurred vision or double vision. </li> <br>
+                          <li> Unexplained nausea or vomiting, Confusion in everyday matters. </li>
+                        </ul>
+                      
+                      </div>
+
+                      <button id="bcard1-btn" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Click me!!">Read more...</button>
+                      <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card bcard2">
+
+                    <h4 class="card-header bhcard2" > <strong> Precautions. </strong> </h4>
+
+                     <span style="margin-left: 15px; margin-top: 15px; font-size: 15px;"> You cannot prevent a
+                     brain tumor. You can reduce your risk of developing a brain tumor by avoiding environmental hazards. </span>
+
+                     <span style="margin-left: 15px; margin-top: 15px; font-size: 15px;">There's no way to prevent brain cancer, 
+                     but you can reduce your risk of getting it if you:</span>
+                     
+                     <ul style="margin-left: 15px; font-size: 15px;"><br>    
+                             <li> To avoid exposure to pesticides and insecticides. </li> <br>
+                             <li> To avoid exposure to carcinogenic chemicals. </li>
+                      </ul>
+
+                      <div id="bcard2-hide">
+
+                        <ul style="margin-left: 15px; font-size: 15px;">
+                          <li> To avoid smoking. </li> <br>
+                          <li> To avoid unnecessary exposure to radiation. </li>
+                        </ul>
+                      
+                      </div>
+
+                      <button id="bcard2-btn" style="margin-top: 10px;" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Click me!!">Read more...</button>
+                      <br>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card bcard3">
+
+                     <h4 class="card-header bhcard3"> <strong> Brain Tumor Treatment. </strong> </h4>
+                     
+                     <span style="margin-left: 15px; margin-top: 15px; font-size: 15px;">There are several treatments for brain tumor. Treatment for 
+                     primary brain tumor will be different from treatment for tumors that have metastasized from other sites. 
+                     You may receive one or more treatments depending on the type, size, and location of your brain tumor. 
+                     </span><br>
+
+                     <span style="margin-left: 15px; font-size: 15px;">Treatments Includes:</span>
+
+                     
+                     <ul style="margin-left: 15px; font-size: 15px;"><br>
+                         <li> Surgery. </li> <br>
+                         <li> Chemotherapy and Radiation Theraphy. </li>
+                     </ul>
+                     <div id="bcard3-hide">
+
+                      <ul style="margin-left: 15px; font-size: 15px;">
+                        <li> Biologic Drugs. </li><br>
+                        <li> Clinical Trials. </li> <br>
+                        <li> Rehabilitation. </li>
+                      </ul>
+                    
+                    </div>
+
+                    <button id="bcard3-btn" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Click me!!">Read more...</button>
+                    <br>
+            </div>
+          </div>
+
+        </div>
+      </div>
+</div>
+
+<br><br><br>
+
+<div id="intro">
+
+  <div class="container">
+       
+         <div class="card bicard">
+           <h3 class="card-header biheader"> <strong> Introduction to Brain Tumor. </strong> </h3>
+           <div class="card-body">
+             <div class="card-text bitext">
+               <p>The brain tumors, are the most common and aggressive disease, leading to a very short life expectancy in their highest grade. 
+                 Thus, treatment planning is a key stage to improve the quality of life of patients. Generally, various image techniques such as 
+                 Computed Tomography (CT), Magnetic Resonance Imaging (MRI) and ultrasound image are used to evaluate the tumor in a brain, lung, 
+                 liver, breast, prostate…etc. Especially, in this work MRI images are used to diagnose tumor in the brain. However the huge amount
+                 of data generated by MRI scan thwarts manual classification of tumor vs non-tumor in a particular time. But it having some limitation
+                 (i.e) accurate quantitative measurements is provided for limited number of images. Hence trusted and automatic classification scheme
+                 are essential to prevent the death rate of human. The automatic brain tumor classification is very challenging task in large spatial 
+                 and structural variability of surrounding region of brain tumor. In this work, automatic brain tum		or detection is proposed by using
+                 Convolutional Neural Networks (CNN) classification. The deeper architecture design is performed by using small kernels. The weight of the 
+                 neuron is given as small. Experimental results show that the CNN archives rate of 97.5% accuracy with low complexity and compared with the all other state of arts methods.
+               </p>
+             </div>
+           </div>
+         </div>
+
+  </div>
+
+</div>
+
+    <!-- ======= Gallery Section ======= -->
+<section id="gallery" class="gallery">
+  <div class="container">
+
+      <div class="">
+        <h2 style="text-align: center; color: #1565b1; font-family: 'Times New Roman', Times, serif;"><strong>Gallery</strong></h2>
+        <h5 style="text-align: center; color: #1565b1;">Normal and Brain Tumor Images</h5>
+      </div> 
+    
+      <div class="container">
+        <div class="row no-gutters">
+
+          <h5 style="color: #1565b1;"> <strong> Normal Images: </strong></h5>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/normal images/n1.jpg" class="galelry-lightbox">
+                <img src="static/normal images/n1.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/normal images/n2.jpg" class="galelry-lightbox">
+                <img src="static/normal images/n2.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/normal images/n3.jpg" class="galelry-lightbox">
+                <img src="static/normal images/n3.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/normal images/n4.jpg" class="galelry-lightbox">
+                <img src="static/normal images/n4.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div> <br>
+          </div>
+
+          <h5 style="color: #1565b1;"><strong> Brain Tumor Images: </strong></h5>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/brain tumor images/b1.jpg" class="galelry-lightbox">
+                <img src="static/brain tumor images/b1.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/brain tumor images/b2.jpg" class="galelry-lightbox">
+                <img src="static/brain tumor images/b2.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/brain tumor images/b3.jpg" class="galelry-lightbox">
+                <img src="static/brain tumor images/b3.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="static/brain tumor images/b4.jpg" class="galelry-lightbox">
+                <img src="static/brain tumor images/b4.jpg" alt="" class="img-fluid img-thumbnail img">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+  </div>
+</section><!-- End Gallery Section -->
+
+ 
+
+
+
+  <!-- ======= Footer ======= -->
+
+  <footer id="footer1" >
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div style="margin-top: 30px;" class="me-md-auto text-center text-md-start">
+
+            <div class="copyright">
+              &copy; Copyright <strong><span>DetectBrainTumor.com</span></strong>. All Rights Reserved
+            </div>
+            
+            <div class="credits">
+              Designed by <a href="#">DetectBrainTumor.com</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="social-links text-center text-md-right pt-3 pt-md-0" style="margin-top: 30px; margin-left: 320px;" >
+
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader">
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+  
+<script>
+  
+  $(document).ready(function(){
+
+      $("#bcard1-btn").click(function(){
+           $("#bcard1-hide").slideToggle();
+      });
+
+      $("#bcard2-btn").click(function(){
+           $("#bcard2-hide").slideToggle();
+      });
+
+      $("#bcard3-btn").click(function(){
+           $("#bcard3-hide").slideToggle();
+      });
+      
+  });
+
+</script>
+
+</body>
+
+</html>

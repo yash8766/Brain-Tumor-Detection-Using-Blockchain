@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Brain Tumor Detection</title>
+
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ 
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <style>
+
+      .latest{
+          margin-top: 120px;
+      }
+
+      .lrcard{
+        box-shadow: 5px 5px 5px  lightsteelblue;
+        width: 500px;
+        margin-left: 50px;
+      }
+
+      .fontf{
+        margin-top: 16px;
+        color: #1565b1;
+        font-size: 17px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      .lrtbox{
+        height: 32px;
+        width: 350px;
+        padding: 12px 12px;
+        box-sizing: border-box;
+        border: 1px solid lightsteelblue;
+        outline: none;
+      } 
+
+      .lrtbox:hover{
+        border: 2px solid #1565b1;
+      }
+
+      #lrhide{
+        display: none;
+      }
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="#">algorithmic.electronics@gmail.com</a>
+        <i class="bi bi-phone"></i> +91 9049301122
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">DetectBrainTumor.com</a></h1>
+     
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="home">Home</a></li>
+          <li><a class="nav-link scrollto" href="image">Detect Brain Tumor</a></li>
+          <li><a class="nav-link scrollto active" href="mine">Latest Report</a></li>
+          <li><a class="nav-link scrollto" href="full_chain">Show Full Block Chain</a></li>
+          <li><a class="nav-link scrollto" href="#">About</a></li>
+      </nav>
+
+    </div>
+</header>
+
+  
+<div class="latest">
+
+    <header style="text-align: center; color: #1565b1;">
+        <h3 style="padding-top: 15px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Report of Brian Tumor Patient.</h3>
+    </header>
+
+    <div class="container-fluid" style="margin-top: 15px;">
+
+      <div class="row">
+             
+            <div class="col-lg-6">
+              <img src="static/images/lrimg.jpg" width="680px" height="700px;" style="margin-left: 10px;">
+            </div>
+        
+            <div class="col-lg-6">
+
+              <div class="card lrcard">
+                <div class="card-body" style="margin-left: 10px; margin-top: -22px;">
+                
+                    <form action="" method="post">
+
+                        <label class="fontf"><b> Message </b></label> <br>
+                        <input type="text" class="lrtbox" name='message' value="{{ message }}"> <br>
+                      
+                        <label class="fontf"><b> Index </b></label> <br>
+                        <input type="text" class="lrtbox" name='index' value="{{ index }}">  <br>
+
+                        <label class="fontf"><b> Recipient </b></label> <br>
+                        <input type="text" class="lrtbox" name='recipient' value="{{ recipient }}"> <br>
+
+                        <label class="fontf"><b> Proof </b></label> <br>
+                        <input type="text" class="lrtbox" name='proof' value="{{ proof }}"> <br>
+
+                        <label class="fontf"><b> Previous Hash </b></label> <br>
+                        <input type="text" class="lrtbox" name='prevHash' value="{{ prevHash }}"> <br>
+   
+                       <div id="lrhide">
+
+                              <label class="fontf"><b> Patient Name </b></label> <br>
+                              <input type="text" class="lrtbox" name='name' value="{{ name }}"> <br>
+
+                              <label class="fontf"><b> Contact No. </b></label> <br>
+                              <input type="text" class="lrtbox" name='num' value="{{ num }}"> <br>
+
+                              <label class="fontf"><b> Scan Report </b></label> <br>
+                              <input type="text" class="lrtbox" name='report' value="{{ report }}"> <br><br>
+                              
+                              <input name="block" class="btn btn-primary" type="submit" value="Show Block" style="margin-left: 150px;">
+
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="btn-hide" style="margin-left: 150px;">Show More</button>
+
+                    </form>  
+
+                </div>
+              </div>      
+            </div>
+
+      </div>
+    </div>
+</div>
+
+<br>
+
+<footer id="footer1" >
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div style="margin-top: 30px;" class="me-md-auto text-center text-md-start">
+
+            <div class="copyright">
+              &copy; Copyright <strong><span>DetectBrainTumor.com</span></strong>. All Rights Reserved
+            </div>
+            
+            <div class="credits">
+              Designed by <a href="#">DetectBrainTumor.com</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="social-links text-center text-md-right pt-3 pt-md-0" style="margin-top: 30px; margin-left: 320px;" >
+
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+</footer>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+<script>
+      
+      $(document).ready(function(){
+         
+           $("#btn-hide").click(function(){
+                $("#lrhide").slideDown();
+                $("#btn-hide").hide();
+           });
+
+      });
+
+
+</script>
+
+
+</body>
+</html>
